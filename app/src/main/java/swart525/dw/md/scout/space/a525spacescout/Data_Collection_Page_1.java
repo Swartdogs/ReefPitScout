@@ -63,7 +63,8 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
                 if (GenTeamNumTXT.getText().toString().isEmpty()) {
                     Toast.makeText(Data_Collection_Page_1.this, "Cannot Continue. Please Enter Team Number!", Toast.LENGTH_LONG).show();
-                } else {
+                }
+                else {
                     int Team_Num_Real = Integer.parseInt(GenTeamNumTXT.getText().toString());
                     if (CompareTeamNum < Team_Num_Real) {
                         GenTeamNum = Integer.parseInt(GenTeamNumTXT.getText().toString()); //Sets team num data to txt box information

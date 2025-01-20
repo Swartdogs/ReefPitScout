@@ -14,8 +14,8 @@ public class data_collection_end_game extends AppCompatActivity {
     public static String EndDeepHang = "False";
     public static String EndPlayerProcessor = "False";
     public static String EndPlayerStation = "False";
-    public static String EndDefenceYes = "False";
-    public static String EndDefenceNo = "False";
+    public static String EndDefenseYes = "False";
+    public static String EndDefenseNo = "False";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +23,8 @@ public class data_collection_end_game extends AppCompatActivity {
         setContentView(R.layout.activity_data_collection_end_game);
 
         //Defines Page Elements
-        final RadioButton EndDefenceYesRB = (RadioButton) findViewById(R.id.endDefenceYes_RB);
-        final RadioButton EndDefenceNoRB = (RadioButton) findViewById(R.id.endDefenseNo_RB);
+        final RadioButton EndDefenseYesRB = (RadioButton) findViewById(R.id.endDefenseYes_RB);
+        final RadioButton EndDefenseNoRB = (RadioButton) findViewById(R.id.endDefenseNo_RB);
         final CheckBox EndShallowHangCB = (CheckBox) findViewById(R.id.endHangShallow_CB);
         final CheckBox EndDeepHangCB = (CheckBox) findViewById(R.id.endHangDeep_CB);
         final CheckBox EndPlayerProcessorCB = (CheckBox) findViewById(R.id.endHumanPlayerProcessor_CB);
@@ -36,11 +36,11 @@ public class data_collection_end_game extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                if (EndDefenceYesRB.isChecked()){
-                    EndDefenceYes = "True";
+                if (EndDefenseYesRB.isChecked()){
+                    EndDefenseYes = "True";
                 }
-                if (EndDefenceNoRB.isChecked()){
-                    EndDefenceNo = "True";
+                if (EndDefenseNoRB.isChecked()){
+                    EndDefenseNo = "True";
                 }
                 if (EndPlayerProcessorCB.isChecked()) {
                     EndPlayerProcessor = "True";

@@ -22,52 +22,37 @@ public class Start_Page extends AppCompatActivity {
 
             public void onClick(View v) {
                 Data_Collection_Page_1.GenTeamNum = 0;
-                /*        Data_Collection_Page_1.GenCubes = "False";
-                        Data_Collection_Page_1.GenCones = "False";
-                        Data_Collection_Page_1.GenSubstation = "False";
-                        Data_Collection_Page_1.GenGround = "False";
-                        Data_Collection_Page_1.GenSideways = "False";
-                        Data_Collection_Page_1.GenRightSideUp = "False";
-                        Data_Collection_Page_1.GenBlueZone1 = "False";
-                        Data_Collection_Page_1.GenBlueZone2 = "False";
-                        Data_Collection_Page_1.GenBlueZone3 = "False";
-                        Data_Collection_Page_1.GenBlueZone4 = "False";
-                        Data_Collection_Page_1.GenRedZone1 = "False";
-                        Data_Collection_Page_1.GenRedZone2 = "False";
-                        Data_Collection_Page_1.GenRedZone3 = "False";
-                        Data_Collection_Page_1.GenRedZone4 = "False";
-                        data_Collection_sandstorm.AutoMobility = "False";
-                        data_Collection_sandstorm.AutoTop = "False";
-                        data_Collection_sandstorm.AutoMiddle = "False";
-                        data_Collection_sandstorm.AutoBottom = "False";
-                        data_Collection_sandstorm.AutoCubes0 = "False";
-                        data_Collection_sandstorm.AutoCubes1 = "False";
-                        data_Collection_sandstorm.AutoCubes2 = "False";
-                        data_Collection_sandstorm.AutoCubes3 = "False";
-                        data_Collection_sandstorm.AutoCones0 = "False";
-                        data_Collection_sandstorm.AutoCones1 = "False";
-                        data_Collection_sandstorm.AutoCones2 = "False";
-                        data_Collection_sandstorm.AutoCones3 = "False";
-                        data_Collection_sandstorm.AutoColorReliance = "False";
-                        data_Collection_sandstorm.AutoDock = "False";
-                        data_Collection_sandstorm.AutoEngage = "False";
-                        data_collection_end_game.TeleEndTopCones = "False";
-                        data_collection_end_game.TeleEndMiddleCones = "False";
-                        data_collection_end_game.TeleEndBottomCones = "False";
-                        data_collection_end_game.TeleEndTopCubes = "False";
-                        data_collection_end_game.TeleEndMiddleCubes = "False";
-                        data_collection_end_game.TeleEndBottomCubes = "False";
-                        data_collection_end_game.TeleEndDefense = "False";
-                        data_collection_end_game.TeleEndDock = "False";
-                        data_collection_end_game.TeleEndEngage = "False";
-                        data_collection_end_game.TeleEndPark = "False";
+                Data_Collection_Page_1.GenAutoCodes = 0;
+                        Data_Collection_Page_1.GenReefL1 = "False";
+                        Data_Collection_Page_1.GenReefL2 = "False";
+                        Data_Collection_Page_1.GenReefL3 = "False";
+                        Data_Collection_Page_1.GenReefL4 = "False";
+                        Data_Collection_Page_1.GenAutoRight = "False";
+                        Data_Collection_Page_1.GenAutoLeft = "False";
+                        data_Collection_sandstorm.CoralReefL1 = "False";
+                        data_Collection_sandstorm.CoralReefL2 = "False";
+                        data_Collection_sandstorm.CoralReefL3 = "False";
+                        data_Collection_sandstorm.CoralReefL4 = "False";
+                        data_Collection_sandstorm.CoralPickupGround = "False";
+                        data_Collection_sandstorm.CoralPickupStation = "False";
+                        data_Collection_sandstorm.CoralPickupTrough = "False";
+                        data_Collection_sandstorm.AlgaePickupGround = "False";
+                        data_Collection_sandstorm.AlgaePickupReef = "False";
+                        data_Collection_sandstorm.AlgaePlaceProcessor = "False";
+                        data_Collection_sandstorm.AlgaePlaceNet = "False";
+                        data_Collection_sandstorm.AlgaeKnockYes = "False";
+                        data_Collection_sandstorm.AlgaeKnockNo = "False";
+                        data_collection_end_game.EndShallowHang = "False";
+                        data_collection_end_game.EndDeepHang = "False";
+                        data_collection_end_game.EndPlayerProcessor = "False";
+                        data_collection_end_game.EndPlayerStation = "False";
+                        data_collection_end_game.EndDefenseYes = "False";
+                        data_collection_end_game.EndDefenseNo = "False";
                         Save_Page.comment = "No Comment";
-                    */
-                //data_Collection_sandstorm.BallCountAuto = 0;
-                //data_collection_TeleOP.WrongColorYes = "False";
-                //data_collection_TeleOP.WrongColorNo = "False";
 
-                Intent startintent = new Intent(getApplicationContext(), Data_Collection_Page_1.class);
+
+
+                Intent startintent = new Intent(Start_Page.this, Data_Collection_Page_1.class);
                 startActivity(startintent);
             }
 
