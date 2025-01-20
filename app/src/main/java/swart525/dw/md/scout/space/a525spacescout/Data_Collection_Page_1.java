@@ -46,24 +46,6 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         final CheckBox GenAutoRightCB = (CheckBox) findViewById(R.id.genPickupRight_CB);
 
 
-
-
-
-        //final CheckBox GenCanDockCB = (CheckBox) findViewById(R.id.Gen_CanDock_CB);
-        //final CheckBox GenCanEngageCB = ((CheckBox) findViewById(R.id.Gen_CanEngage_CB);
-
-        //Defines all buttons for locations
-
-        //  final Button RedOtherCB = (Button) findViewById(R.id.Red_Other_B);
-
-        //  final Button BlueOtherCB = (Button) findViewById(R.id.Blue_Other_CB);
-
-        //Clicking Buttons while on page 1
-
-        //Button Red1CB = findViewById(R.id.Red1_B);
-        //Toggle the colors of the button when it is touched
-
-
         //Defines button needed and actions to cancel a data collection
         Button Cancel_Collection = (Button) findViewById(R.id.genCancel_B);
         Cancel_Collection.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
@@ -73,6 +55,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 startActivity(startintent);
             }
         });
+
         //Defines Start button and takes to next page as well as recording data
         Button Start_Collection = (Button) findViewById(R.id.genNextPage_B);
         Start_Collection.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button

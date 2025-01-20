@@ -24,7 +24,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Student\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\cfrobotics\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                                 <entry key="opacityPercent" value="60" />
                                               </map>
                                             </option>
@@ -68,7 +68,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\Student\Desktop\Scouting Apps\Charged Up Scouting" />
+                                                <entry key="imagePath" value="C:\Users" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -80,7 +80,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Student\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\cfrobotics\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -92,8 +92,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Student\Downloads\WhiteSquareSpongeBobSquarePants.png" />
-                                                <entry key="scalingPercent" value="83" />
+                                                <entry key="imagePath" value="C:\Users\cfrobotics\Downloads\reefscapelogo.png" />
+                                                <entry key="scalingPercent" value="58" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -125,6 +125,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="4cc2dc" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
                                       <entry key="outputName" value="crescendowhiteicon" />
                                       <entry key="showSafeZone" value="false" />
@@ -144,7 +146,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Student\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\cfrobotics\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -188,7 +190,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Student\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\cfrobotics\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -252,7 +254,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\Student\Pictures\apriltagpic.png" />
+                                                <entry key="imagePath" value="C:\Users" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -263,7 +265,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\Student\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\cfrobotics\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -275,7 +277,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Student\Pictures\apriltagpic.png" />
+                                                <entry key="imagePath" value="C:\Users" />
                                               </map>
                                             </option>
                                           </PersistentState>
