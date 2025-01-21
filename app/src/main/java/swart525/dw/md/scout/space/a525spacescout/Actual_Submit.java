@@ -1,4 +1,6 @@
 package swart525.dw.md.scout.space.a525spacescout;
+import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
@@ -7,7 +9,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 
 public class Actual_Submit extends AppCompatActivity {
@@ -73,8 +82,8 @@ public class Actual_Submit extends AppCompatActivity {
 
         public void Press_Here (View v){
             //Toast.makeText(this, "Start", Toast.LENGTH_LONG).show();
-            //txtDebug.setTe("test")
-            /*if (isExternalStorageWritable() && checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            //txtDebug.setTe("test");
+            if (isExternalStorageWritable() && checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
                 Toast.makeText(this, "First If", Toast.LENGTH_LONG).show();
                 if(Scout_Data.exists() && Scout_Data.isFile() ){
                     try {
@@ -106,9 +115,9 @@ public class Actual_Submit extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-            */}
-            //Toast.makeText(this, "No permissions", Toast.LENGTH_LONG).show();
-        //}
+            }
+            Toast.makeText(this, "No permissions", Toast.LENGTH_LONG).show();
+        }
 
     public boolean checkPermission (String permission) {
         int check = ContextCompat.checkSelfPermission(this, permission);

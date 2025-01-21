@@ -11,10 +11,10 @@ import android.widget.RadioButton;
 public class data_Collection_sandstorm extends AppCompatActivity {
 
     //Defines variables for use
-    public static String CoralReefL4 = "False";
-    public static String CoralReefL3 = "False";
-    public static String CoralReefL2 = "False";
     public static String CoralReefL1 = "False";
+    public static String CoralReefL2 = "False";
+    public static String CoralReefL3 = "False";
+    public static String CoralReefL4 = "False";
     public static String CoralPickupGround = "False";
     public static String CoralPickupStation = "False";
     public static String CoralPickupTrough = "False";
@@ -33,10 +33,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection_sandstorm);
 
         //Defines all checkboxes for reef
-        final CheckBox CoralReefL4CB = (CheckBox) findViewById(R.id.teleopCoralReachL4_CB);
-        final CheckBox CoralReefL3CB = (CheckBox) findViewById(R.id.teleopCoralReachL3_CB);
-        final CheckBox CoralReefL2CB = (CheckBox) findViewById(R.id.teleopCoralReachL2_CB);
-        final CheckBox CoralReefL1CB = (CheckBox) findViewById(R.id.teleopCoralReachL1_CB);
+        final CheckBox CoralReefL1CB = (CheckBox) findViewById(R.id.teleopCoralReachL4_CB);
+        final CheckBox CoralReefL2CB = (CheckBox) findViewById(R.id.teleopCoralReachL3_CB);
+        final CheckBox CoralReefL3CB = (CheckBox) findViewById(R.id.teleopCoralReachL2_CB);
+        final CheckBox CoralReefL4CB = (CheckBox) findViewById(R.id.teleopCoralReachL1_CB);
 
         //Defines all checkboxes for coral pickup
         final CheckBox CoralPickupGroundCB = (CheckBox) findViewById(R.id.teleopCoralGround_CB);
@@ -66,17 +66,17 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             public void onClick(View v) {
 
                 /*add in data collection pieces from checkboxes*/
-                if (CoralReefL4CB.isChecked()) {
-                    CoralReefL4 = "True";
-                }
-                if (CoralReefL3CB.isChecked()) {
-                    CoralReefL3 = "True";
+                if (CoralReefL1CB.isChecked()) {
+                    CoralReefL1 = "True";
                 }
                 if (CoralReefL2CB.isChecked()) {
                     CoralReefL2 = "True";
                 }
-                if (CoralReefL1CB.isChecked()) {
-                    CoralReefL1 = "True";
+                if (CoralReefL3CB.isChecked()) {
+                    CoralReefL3 = "True";
+                }
+                if (CoralReefL4CB.isChecked()) {
+                    CoralReefL4 = "True";
                 }
                 //add in data collection pieces from radio buttons
                 if (CoralPickupGroundCB.isChecked()) {

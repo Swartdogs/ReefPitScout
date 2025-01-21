@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class Save_Page extends AppCompatActivity {
-    public static String comment = "No Comment";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

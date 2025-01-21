@@ -48,7 +48,7 @@ public class Start_Page extends AppCompatActivity {
                         data_collection_end_game.EndPlayerStation = "False";
                         data_collection_end_game.EndDefenseYes = "False";
                         data_collection_end_game.EndDefenseNo = "False";
-                        Save_Page.comment = "No Comment";
+
 
 
 

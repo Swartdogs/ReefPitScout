@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/genPickupRight_CB"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A5A5A5"
@@ -47,7 +46,7 @@
         android:text="Where can you place coral in Auto?"
         android:textAlignment="center"
         android:textColor="#343434"
-        android:textSize="40sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
@@ -121,15 +120,15 @@
 
     <TextView
         android:id="@+id/genAutoPickup_TV"
-        android:layout_width="686dp"
-        android:layout_height="101dp"
+        android:layout_width="590dp"
+        android:layout_height="87dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/bolt_regular"
         android:foregroundGravity="center_horizontal"
         android:text="Can you pick up coral In Auto? If so, where?"
         android:textAlignment="center"
         android:textColor="#343434"
-        android:textSize="40sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
@@ -145,10 +144,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintHorizontal_bias="0.753"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813" />
+        app:layout_constraintVertical_bias="0.821" />
 
     <CheckBox
         android:id="@+id/genPickupLeft_CB"
@@ -158,10 +157,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813" />
+        app:layout_constraintVertical_bias="0.821" />
 
     <Button
         android:id="@+id/genNextPage_B"
@@ -219,19 +218,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.105" />
 
-    <android.support.design.widget.TextInputEditText
-        android:id="@+id/genAutoCodes_TXT"
-        android:layout_width="253dp"
-        android:layout_height="70dp"
-        android:hint="# of Codes"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.248"
-        app:layout_constraintStart_toEndOf="@+id/genAutoCode_TV"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
-
     <TextView
         android:id="@+id/genAutoCode_TV"
         android:layout_width="wrap_content"
@@ -261,10 +247,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toEndOf="@+id/genTeamNum_TV"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <View
         android:id="@+id/divider3"
@@ -278,6 +264,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.256" />
+
+    <EditText
+        android:id="@+id/genAutoCodes_TXT"
+        android:layout_width="253dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:hint="# of Codes"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
 
 
 </android.support.constraint.ConstraintLayout>
