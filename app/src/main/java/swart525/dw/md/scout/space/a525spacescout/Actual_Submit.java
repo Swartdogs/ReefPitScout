@@ -38,6 +38,7 @@ public class Actual_Submit extends AppCompatActivity {
          Data_Collection_Page_1.GenReefL4 + "," +
          Data_Collection_Page_1.GenAutoLeft + "," +
          Data_Collection_Page_1.GenAutoRight + "," +
+                    Data_Collection_Page_1.GenAutoGround + "," +
             data_Collection_sandstorm.CoralReefL1 + "," +
             data_Collection_sandstorm.CoralReefL2 + "," +
             data_Collection_sandstorm.CoralReefL3 + "," +

@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
 
 
@@ -22,6 +21,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
     public static String GenReefL4 = "False";
     public static String GenAutoLeft = "False";
     public static String GenAutoRight = "False";
+    public static String GenAutoGround = "False";
 
 
     @Override
@@ -44,7 +44,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
         final CheckBox GenAutoLeftCB = (CheckBox) findViewById(R.id.genPickupLeft_CB);
         final CheckBox GenAutoRightCB = (CheckBox) findViewById(R.id.genPickupRight_CB);
-
+        final CheckBox GenAutoGroundCB = (CheckBox) findViewById(R.id.genPickupGround_CB);
 
         //Defines button needed and actions to cancel a data collection
         Button Cancel_Collection = (Button) findViewById(R.id.genCancel_B);
@@ -85,8 +85,9 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenAutoLeftCB.isChecked()) {
                     GenAutoLeft= "True";
                 }
-
-
+                if (GenAutoGroundCB.isChecked()) {
+                    GenAutoGround= "True";
+                }
                 if (GenTeamNumTXT.getText().toString().isEmpty() || GenAutoCodesTXT.getText().toString().isEmpty()) {
                     Toast.makeText(Data_Collection_Page_1.this, "Cannot Continue. Please Enter Team Number Or Auto Codes!", Toast.LENGTH_LONG).show();
                 }
@@ -94,6 +95,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                     int Team_Num_Real = Integer.parseInt(GenTeamNumTXT.getText().toString());
                     if (CompareTeamNum < Team_Num_Real) {
                         GenTeamNum = Integer.parseInt(GenTeamNumTXT.getText().toString()); //Sets team num data to txt box information
+                        GenAutoCodes = Integer.parseInt(GenAutoCodesTXT.getText().toString());
 
                         Intent startintent = new Intent(getApplicationContext(), data_Collection_sandstorm.class);
                         startActivity(startintent);

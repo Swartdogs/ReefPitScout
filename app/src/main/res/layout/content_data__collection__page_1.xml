@@ -144,7 +144,7 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.821" />
@@ -157,7 +157,7 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.821" />
@@ -243,6 +243,7 @@
         android:hint="@string/team"
         android:importantForAutofill="no"
         android:inputType="number"
+        android:maxLength="5"
         android:textColor="#000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -279,6 +280,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.184" />
+
+    <CheckBox
+        android:id="@+id/genPickupGround_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ground"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
 
 
 </android.support.constraint.ConstraintLayout>
