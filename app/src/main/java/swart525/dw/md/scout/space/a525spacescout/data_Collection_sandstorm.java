@@ -33,10 +33,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection_sandstorm);
 
         //Defines all checkboxes for reef
-        final CheckBox CoralReefL1CB = (CheckBox) findViewById(R.id.teleopCoralReachL4_CB);
-        final CheckBox CoralReefL2CB = (CheckBox) findViewById(R.id.teleopCoralReachL3_CB);
-        final CheckBox CoralReefL3CB = (CheckBox) findViewById(R.id.teleopCoralReachL2_CB);
-        final CheckBox CoralReefL4CB = (CheckBox) findViewById(R.id.teleopCoralReachL1_CB);
+        final RadioButton CoralReefL1RB = (RadioButton) findViewById(R.id.teleopCoralReachL4_RB);
+        final RadioButton CoralReefL2RB = (RadioButton) findViewById(R.id.teleopCoralReachL3_RB);
+        final RadioButton CoralReefL3RB = (RadioButton) findViewById(R.id.teleopCoralReachL2_RB);
+        final RadioButton CoralReefL4RB = (RadioButton) findViewById(R.id.teleopCoralReachL1_RB);
 
         //Defines all checkboxes for coral pickup
         final CheckBox CoralPickupGroundCB = (CheckBox) findViewById(R.id.teleopCoralGround_CB);
@@ -66,16 +66,16 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             public void onClick(View v) {
 
                 /*add in data collection pieces from checkboxes*/
-                if (CoralReefL1CB.isChecked()) {
+                if (CoralReefL1RB.isChecked()) {
                     CoralReefL1 = "True";
                 }
-                if (CoralReefL2CB.isChecked()) {
+                if (CoralReefL2RB.isChecked()) {
                     CoralReefL2 = "True";
                 }
-                if (CoralReefL3CB.isChecked()) {
+                if (CoralReefL3RB.isChecked()) {
                     CoralReefL3 = "True";
                 }
-                if (CoralReefL4CB.isChecked()) {
+                if (CoralReefL4RB.isChecked()) {
                     CoralReefL4 = "True";
                 }
                 //add in data collection pieces from radio buttons
