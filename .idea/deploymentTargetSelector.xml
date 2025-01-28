@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-01-22T01:03:14.827916200Z">
+        <DropdownSelection timestamp="2025-01-26T22:11:14.747714300Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\cfrobotics\.android\avd\10.1_WXGA_Tablet_API_29.avd" />
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=HA0YNF3Y" />
             </handle>
           </Target>
         </DropdownSelection>

@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bolt_regular"
-        android:text="Auto"
+        android:text="AUTO"
         android:textColor="#000"
         android:textSize="55sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -273,6 +273,7 @@
         android:ems="10"
         android:hint="# of Codes"
         android:inputType="number"
+        android:maxLength="2"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -293,6 +294,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.821" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="564dp"/>
 
 
 </android.support.constraint.ConstraintLayout>

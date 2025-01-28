@@ -16,7 +16,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="608dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="Submit Data"
+        android:text="SUBMIT DATA"
         android:textColor="#000"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/Submit_To_Store_B"

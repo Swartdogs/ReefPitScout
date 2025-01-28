@@ -31,7 +31,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
         //Sets up comparison numbers
         final int CompareTeamNum = 1; //Team must be greater than 1
-        final int CompareAutoNum = 20;
+        final int CompareAutoNum = 100; // Number of Autos must be less than 100
         //final EditText Match_Num_txt = (EditText) findViewById(R.id.Match_Num_Txt);
         final EditText GenTeamNumTXT = (EditText) findViewById(R.id.genTeamNum_TXT);
         //final EditText Initials_txt = (EditText) findViewById(R.id.Init_Txt);
@@ -93,15 +93,15 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 }
                 else{
                     int Team_Num_Real = Integer.parseInt(GenTeamNumTXT.getText().toString());
-                    int Auto_Num_Real = Integer.parseInt(GenTeamNumTXT.getText().toString());
-                    if (CompareTeamNum < Team_Num_Real || CompareAutoNum < Auto_Num_Real) {
+                    int Auto_Num_Real = Integer.parseInt(GenAutoCodesTXT.getText().toString());
+                    if (CompareTeamNum < Team_Num_Real && CompareAutoNum > Auto_Num_Real) {
                         GenTeamNum = Integer.parseInt(GenTeamNumTXT.getText().toString()); //Sets team num data to txt box information
                         GenAutoCodes = Integer.parseInt(GenAutoCodesTXT.getText().toString());
 
                         Intent startintent = new Intent(getApplicationContext(), data_Collection_sandstorm.class);
                         startActivity(startintent);
                     } else {
-                        Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Data_Collection_Page_1.this, "This error should not be reached. Uh Oh!", Toast.LENGTH_LONG).show();
                     }
                 }
 

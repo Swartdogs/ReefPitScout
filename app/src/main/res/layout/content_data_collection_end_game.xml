@@ -113,7 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bolt_regular"
-        android:text="Endgame"
+        android:text="ENDGAME"
         android:textColor="#000000"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -140,18 +140,18 @@
 
     <TextView
         android:id="@+id/endHangLocation_TB"
-        android:layout_width="wrap_content"
-        android:layout_height="51dp"
+        android:layout_width="790dp"
+        android:layout_height="97dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="Can you Hang? If so, where?"
+        android:text="Can you Hang? If so, where and how long does it take?"
+        android:textAlignment="center"
         android:textColor="#343434"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.152" />
 
     <CheckBox
         android:id="@+id/endHangShallow_CB"
@@ -161,10 +161,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.236" />
 
     <CheckBox
         android:id="@+id/endHangDeep_CB"
@@ -174,10 +174,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.236" />
 
     <TextView
         android:id="@+id/End_PictureReminder_TB"
