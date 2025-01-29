@@ -11,13 +11,14 @@
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="726dp"
+        android:layout_height="220dp"
         android:layout_marginTop="200dp"
         android:fontFamily="@font/bolt_regular"
         android:text="Please Click Below"
+        android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="60sp"
+        android:textSize="100sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,17 +27,53 @@
 
     <Button
         android:id="@+id/Press_Here_B"
-        android:layout_width="504dp"
-        android:layout_height="248dp"
+        android:layout_width="589dp"
+        android:layout_height="360dp"
         android:layout_marginTop="562dp"
-        android:layout_marginBottom="196dp"
+        android:background="#FF6E00"
         android:fontFamily="@font/bolt_regular"
         android:onClick="Press_Here"
         android:text="Press Here"
-        android:textSize="50sp"
+        android:textSize="85sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/redArrow2_IV"
+        android:layout_width="226dp"
+        android:layout_height="316dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@drawable/pngimg_com___red_arrow_png68" />
+
+    <ImageView
+        android:id="@+id/redArrow1_IV"
+        android:layout_width="226dp"
+        android:layout_height="316dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/pngimg_com___red_arrow_png68" />
+
+    <ImageView
+        android:id="@+id/redArrow3_IV"
+        android:layout_width="226dp"
+        android:layout_height="316dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/pngimg_com___red_arrow_png68" />
 
 </android.support.constraint.ConstraintLayout>

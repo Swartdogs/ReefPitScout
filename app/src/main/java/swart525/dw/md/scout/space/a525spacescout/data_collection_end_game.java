@@ -17,7 +17,9 @@ public class data_collection_end_game extends AppCompatActivity {
     public static String EndPlayerStation = "False";
     public static String EndDefenseYes = "False";
     public static String EndDefenseNo = "False";
-
+    public static String EndPreferenceAlgae = "False";
+    public static String EndPreferenceCoral = "False";
+    public static String EndPreferenceNo = "False";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,9 @@ public class data_collection_end_game extends AppCompatActivity {
         final CheckBox EndDeepHangCB = (CheckBox) findViewById(R.id.endHangDeep_CB);
         final CheckBox EndPlayerProcessorCB = (CheckBox) findViewById(R.id.endHumanPlayerProcessor_CB);
         final CheckBox EndPlayerStationCB = (CheckBox) findViewById(R.id.endHumanPlayerStation_CB);
+        final RadioButton EndPreferenceAlgaeRB = (RadioButton) findViewById(R.id.endPreferenceAlgae_RB);
+        final RadioButton EndPreferenceCoralRB = (RadioButton) findViewById(R.id.endPreferenceCoral_RB);
+        final RadioButton EndPreferenceNoRB = (RadioButton) findViewById(R.id.endPreferenceNo_RB);
 
         Button To_Submission = (Button) findViewById(R.id.To_Submission_B); //Defines button for later use
         To_Submission.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
@@ -56,7 +61,15 @@ public class data_collection_end_game extends AppCompatActivity {
                 if (EndDeepHangCB.isChecked()) {
                     EndDeepHang = "True";
                 }
-
+                if (EndPreferenceAlgaeRB.isChecked()){
+                    EndPreferenceAlgae = "True";
+                }
+                if (EndPreferenceCoralRB.isChecked()){
+                    EndPreferenceCoral = "True";
+                }
+                if (EndPreferenceNoRB.isChecked()){
+                    EndPreferenceNo = "True";
+                }
 
                 //Ending position variables
                 //Because these are radio buttons, they may need to be changed to isChecked

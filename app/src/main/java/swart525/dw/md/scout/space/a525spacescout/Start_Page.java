@@ -48,7 +48,9 @@ public class Start_Page extends AppCompatActivity {
                         data_collection_end_game.EndPlayerStation = "False";
                         data_collection_end_game.EndDefenseYes = "False";
                         data_collection_end_game.EndDefenseNo = "False";
-
+                        data_collection_end_game.EndPreferenceAlgae = "False";
+                        data_collection_end_game.EndPreferenceCoral = "False";
+                        data_collection_end_game.EndPreferenceNo = "False";
 
 
 

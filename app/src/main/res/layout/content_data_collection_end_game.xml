@@ -10,63 +10,73 @@
     tools:showIn="@layout/activity_data_collection_end_game">
 
     <TextView
-        android:id="@+id/end_HumanPlayerPreference_TB"
-        android:layout_width="656dp"
-        android:layout_height="108dp"
+        android:id="@+id/Other_TV"
+        android:layout_width="266dp"
+        android:layout_height="60dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="Do you have a preference on where your human player is?"
+        android:text="OTHER"
         android:textAlignment="center"
-        android:textColor="#343434"
-        android:textSize="40sp"
+        android:textColor="#000000"
+        android:textSize="55sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
+        app:layout_constraintVertical_bias="0.372" />
 
-    <CheckBox
-        android:id="@+id/endHumanPlayerStation_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:enabled="true"
-        android:text="Station"
-        android:textSize="40sp"
+    <RadioGroup
+        android:layout_width="747dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:requiresFadingEdge="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintHorizontal_bias="0.358"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintVertical_bias="0.823">
 
-    <CheckBox
-        android:id="@+id/endHumanPlayerProcessor_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:enabled="true"
-        android:text="Processor"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.339"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
+        <RadioButton
+            android:id="@+id/endPreferenceAlgae_RB"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:text="Algae"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/endPreferenceCoral_RB"
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Coral"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/endPreferenceNo_RB"
+            android:layout_width="339dp"
+            android:layout_height="81dp"
+            android:text="No Preference"
+            android:textSize="45sp" />
+
+    </RadioGroup>
 
     <TextView
-        android:id="@+id/endDefense_TV"
-        android:layout_width="676dp"
-        android:layout_height="80dp"
-        android:fontFamily="@font/bolt_regular"
-        android:text="Do you prefer to play defense?"
+        android:id="@+id/otherAlgaeSpecialist_TV"
+        android:layout_width="690dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Do you focus on Algae or Coral?"
         android:textAlignment="center"
-        android:textColor="#343434"
-        android:textSize="40sp"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintVertical_bias="0.758" />
 
     <RadioGroup
         android:id="@+id/End_HumanPlayerPreference_RG"
@@ -75,10 +85,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631">
+        app:layout_constraintVertical_bias="0.685">
 
         <RadioButton
             android:id="@+id/endDefenseYes_RB"
@@ -107,6 +117,68 @@
             app:layout_constraintVertical_bias="0.168" />
 
     </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/endHumanPlayerStation_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="Station"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543" />
+
+    <CheckBox
+        android:id="@+id/endHumanPlayerProcessor_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="Processor"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543" />
+
+    <TextView
+        android:id="@+id/endDefense_TV"
+        android:layout_width="676dp"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif"
+        android:text="Do you prefer to play defense?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <TextView
+        android:id="@+id/end_HumanPlayerPreference_TB"
+        android:layout_width="654dp"
+        android:layout_height="108dp"
+        android:fontFamily="sans-serif"
+        android:text="Do you have a preference on where your human player is?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
 
     <TextView
         android:id="@+id/TeleEnd_Endgame_TV"
@@ -142,16 +214,17 @@
         android:id="@+id/endHangLocation_TB"
         android:layout_width="790dp"
         android:layout_height="97dp"
-        android:fontFamily="@font/bolt_regular"
-        android:text="Can you Hang? If so, where and how long does it take?"
+        android:fontFamily="sans-serif"
+        android:text="Can you Hang? If so, where?"
         android:textAlignment="center"
-        android:textColor="#343434"
-        android:textSize="40sp"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.12" />
 
     <CheckBox
         android:id="@+id/endHangShallow_CB"
@@ -161,10 +234,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.197" />
 
     <CheckBox
         android:id="@+id/endHangDeep_CB"
@@ -174,26 +247,22 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintHorizontal_bias="0.716"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.316" />
 
-    <TextView
-        android:id="@+id/End_PictureReminder_TB"
-        android:layout_width="485dp"
-        android:layout_height="83dp"
-        android:fontFamily="@font/bolt_regular"
-        android:text="Take picture of robot (Upload to Slack)"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="35sp"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="173dp"
+        android:layout_height="219dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        app:layout_constraintVertical_bias="0.22"
+        app:srcCompat="@drawable/screenshot_2025_01_22_at_7_24_42_pm_removebg_preview" />
 
 
 </android.support.constraint.ConstraintLayout>

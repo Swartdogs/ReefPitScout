@@ -14,7 +14,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
     //Defines Variables for Match/Team Number
     public static int GenTeamNum = 0;
-    public static int GenAutoCodes = 0;
+    public static int GenAutoCodes = 20;
     public static String GenReefL1 = "False";
     public static String GenReefL2 = "False";
     public static String GenReefL3 = "False";
@@ -94,7 +94,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 else{
                     int Team_Num_Real = Integer.parseInt(GenTeamNumTXT.getText().toString());
                     int Auto_Num_Real = Integer.parseInt(GenAutoCodesTXT.getText().toString());
-                    if (CompareTeamNum < Team_Num_Real && CompareAutoNum > Auto_Num_Real) {
+                    if (CompareTeamNum < Team_Num_Real) {
                         GenTeamNum = Integer.parseInt(GenTeamNumTXT.getText().toString()); //Sets team num data to txt box information
                         GenAutoCodes = Integer.parseInt(GenAutoCodesTXT.getText().toString());
 
@@ -107,12 +107,7 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
 
 
-                //if (GenCanDockCB.isChecked()) {
-                //    GenCanDock = "True";
-                //}
-                //if (GenCanEngageCB.isChecked()) {
-                //    GenCanEngage = "True";
-                //}
+
             }
         });
     }

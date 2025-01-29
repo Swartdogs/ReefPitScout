@@ -57,7 +57,10 @@ public class Actual_Submit extends AppCompatActivity {
             data_collection_end_game.EndPlayerProcessor + "," +
             data_collection_end_game.EndPlayerStation + "," +
             data_collection_end_game.EndDefenseYes + "," +
-            data_collection_end_game.EndDefenseNo;
+            data_collection_end_game.EndDefenseNo + "," +
+            data_collection_end_game.EndPreferenceAlgae + "," +
+            data_collection_end_game.EndPreferenceCoral + "," +
+            data_collection_end_game.EndPreferenceNo;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
     public File Scout_Data = new File(externalStorageDir , "/DCIM/" + fileName);
