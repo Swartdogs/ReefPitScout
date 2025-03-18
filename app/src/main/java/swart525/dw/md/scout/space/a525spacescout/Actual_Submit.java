@@ -30,37 +30,41 @@ public class Actual_Submit extends AppCompatActivity {
 
     //Compiles string for CSV file
     public String Final_String =
-            Data_Collection_Page_1.GenTeamNum + "," +
+         Data_Collection_Page_1.GenTeamNum + "," +
          Data_Collection_Page_1.GenAutoCodes + "," +
          Data_Collection_Page_1.GenReefL1 + "," +
-            Data_Collection_Page_1.GenReefL2 + "," +
+         Data_Collection_Page_1.GenReefL2 + "," +
          Data_Collection_Page_1.GenReefL3 + "," +
          Data_Collection_Page_1.GenReefL4 + "," +
          Data_Collection_Page_1.GenAutoLeft + "," +
          Data_Collection_Page_1.GenAutoRight + "," +
-                    Data_Collection_Page_1.GenAutoGround + "," +
-            data_Collection_sandstorm.CoralReefL1 + "," +
-            data_Collection_sandstorm.CoralReefL2 + "," +
-            data_Collection_sandstorm.CoralReefL3 + "," +
-            data_Collection_sandstorm.CoralReefL4 + "," +
-            data_Collection_sandstorm.CoralPickupGround + "," +
-            data_Collection_sandstorm.CoralPickupStation + "," +
-            data_Collection_sandstorm.CoralPickupTrough + "," +
-            data_Collection_sandstorm.AlgaePickupGround + "," +
-            data_Collection_sandstorm.AlgaePickupReef + "," +
-            data_Collection_sandstorm.AlgaePlaceProcessor + "," +
-            data_Collection_sandstorm.AlgaePlaceNet + "," +
-            data_Collection_sandstorm.AlgaeKnockYes + "," +
-            data_Collection_sandstorm.AlgaeKnockNo + "," +
-            data_collection_end_game.EndShallowHang + "," +
-            data_collection_end_game.EndDeepHang + "," +
-            data_collection_end_game.EndPlayerProcessor + "," +
-            data_collection_end_game.EndPlayerStation + "," +
-            data_collection_end_game.EndDefenseYes + "," +
-            data_collection_end_game.EndDefenseNo + "," +
-            data_collection_end_game.EndPreferenceAlgae + "," +
-            data_collection_end_game.EndPreferenceCoral + "," +
-            data_collection_end_game.EndPreferenceNo;
+         Data_Collection_Page_1.GenAutoGround + "," +
+         data_Collection_sandstorm.CoralReefL1 + "," +
+         data_Collection_sandstorm.CoralReefL2 + "," +
+         data_Collection_sandstorm.CoralReefL3 + "," +
+         data_Collection_sandstorm.CoralReefL4 + "," +
+         data_Collection_sandstorm.CoralPickupGround + "," +
+         data_Collection_sandstorm.CoralPickupStation + "," +
+         data_Collection_sandstorm.CoralPickupTrough + "," +
+         data_Collection_sandstorm.AlgaePickupGround + "," +
+         data_Collection_sandstorm.AlgaePickupReef + "," +
+         data_Collection_sandstorm.AlgaePlaceProcessor + "," +
+         data_Collection_sandstorm.AlgaePlaceNet + "," +
+         data_Collection_sandstorm.AlgaeKnockYes + "," +
+         data_Collection_sandstorm.AlgaeKnockNo + "," +
+         data_collection_TeleOP.shallow + "," +
+         data_collection_TeleOP.deep + "," +
+         data_collection_TeleOP.YesFit + "," +
+         data_collection_TeleOP.NoFit + "," +
+         data_collection_end_game.EndPlayerProcessor + "," +
+         data_collection_end_game.EndPlayerStation + "," +
+         data_collection_end_game.EndPlayerNone + "," +
+         data_collection_end_game.EndSwerve + "," +
+         data_collection_end_game.EndTank + "," +
+                 data_collection_end_game.EndOtherText + "," +
+         data_collection_end_game.EndPreferenceAlgae + "," +
+         data_collection_end_game.EndPreferenceCoral + "," +
+         data_collection_end_game.EndPreferenceNo;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
     public File Scout_Data = new File(externalStorageDir , "/DCIM/" + fileName);

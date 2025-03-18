@@ -2,6 +2,7 @@ package swart525.dw.md.scout.space.a525spacescout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String CoralPickupGround = "False";
     public static String CoralPickupStation = "False";
     public static String CoralPickupTrough = "False";
+    public static String CoralPickupReef = "False";
     public static String AlgaePickupGround = "False";
     public static String AlgaePickupReef = "False";
     public static String AlgaePlaceProcessor = "False";
@@ -39,15 +41,23 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         final CheckBox CoralReefL4CB = (CheckBox) findViewById(R.id.teleopCoralReachL1_CB);
 
         //Defines all checkboxes for coral pickup
-        final CheckBox CoralPickupGroundCB = (CheckBox) findViewById(R.id.teleopCoralGround_CB);
-        final CheckBox CoralPickupStationCB = (CheckBox) findViewById(R.id.teleopCoralStation_CB);
-        final CheckBox CoralPickupTroughCB = (CheckBox) findViewById(R.id.teleopCoralTrough_CB);
 
+        final Button CoralPickupGroundB = (Button) findViewById(R.id.coralGround_B);
+        CoralPickupGroundB.setTag("D7D7D7D5");
+        final Button CoralPickupStationB = (Button) findViewById(R.id.coralStation_B);
+        CoralPickupStationB.setTag("#D7D7D7D5");
+        final Button CoralPickupReefB = (Button) findViewById(R.id.coralReef_B);
+        CoralPickupReefB.setTag("D7D7D7D5");
+        final Button AlgaePickupGroundB = (Button) findViewById(R.id.algaeGround_B);
+        AlgaePickupGroundB.setTag("#D7D7D7D5");
+        final Button AlgaePickupReefB = (Button) findViewById(R.id.algaeReef_B);
+        AlgaePickupReefB.setTag("D7D7D7D5");
+        final Button AlgaePlaceProcessorB = (Button) findViewById(R.id.algaeProcessor_B);
+        AlgaePlaceProcessorB.setTag("#D7D7D7D5");
+        final Button AlgaePlaceNetB = (Button) findViewById(R.id.algaeNet_B);
+        AlgaePlaceNetB.setTag("D7D7D7D5");
         //Defines all checkboxes for algae
-        final CheckBox AlgaePickupGroundCB = (CheckBox) findViewById(R.id.teleopAlgaeGround_CB);
-        final CheckBox AlgaePickupReefCB = (CheckBox) findViewById(R.id.teleopAlgaeReef_CB);
-        final CheckBox AlgaePlaceProcessorCB = (CheckBox) findViewById(R.id.teleopAlgaeprocessor_CB);
-        final CheckBox AlgaePlaceNetCB = (CheckBox) findViewById(R.id.teleopAlgaeNet_CB);
+
 
 
         //Defines all radio buttons for algae
@@ -59,6 +69,147 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
         //Defines and implements Button to continue along with variable savings
         final Button To_EndGame_B = (Button) findViewById(R.id.To_EndGame_B);
+        CoralPickupGroundB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) CoralPickupGroundB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    CoralPickupGroundB.setBackgroundColor(ContextCompat.getColor(CoralPickupGroundB.getContext(), R.color.colorPrimary));
+                    CoralPickupGroundB.setTag("#FFE600");
+                    CoralPickupGround = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    CoralPickupGroundB.setBackgroundColor(ContextCompat.getColor(CoralPickupGroundB.getContext(), R.color.grey_button));
+                    CoralPickupGroundB.setTag("D7D7D7D5");
+                    CoralPickupGround = "false";
+                }
+
+            }
+
+        });
+        CoralPickupStationB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) CoralPickupStationB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    CoralPickupStationB.setBackgroundColor(ContextCompat.getColor(CoralPickupStationB.getContext(), R.color.colorPrimary));
+                    CoralPickupStationB.setTag("#FFE600");
+                    CoralPickupStation = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    CoralPickupStationB.setBackgroundColor(ContextCompat.getColor(CoralPickupStationB.getContext(), R.color.grey_button));
+                    CoralPickupStationB.setTag("D7D7D7D5");
+                    CoralPickupStation = "false";
+                }
+
+
+            }
+
+        });
+        CoralPickupReefB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) CoralPickupReefB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    CoralPickupReefB.setBackgroundColor(ContextCompat.getColor(CoralPickupReefB.getContext(), R.color.colorPrimary));
+                    CoralPickupReefB.setTag("#FFE600");
+                    CoralPickupReef = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    CoralPickupReefB.setBackgroundColor(ContextCompat.getColor(CoralPickupReefB.getContext(), R.color.grey_button));
+                    CoralPickupReefB.setTag("D7D7D7D5");
+                    CoralPickupReef = "false";
+                }
+
+            }
+
+        });
+        AlgaePickupGroundB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) AlgaePickupGroundB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    AlgaePickupGroundB.setBackgroundColor(ContextCompat.getColor(AlgaePickupGroundB.getContext(), R.color.colorPrimary));
+                    AlgaePickupGroundB.setTag("#FFE600");
+                    AlgaePickupGround = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    AlgaePickupGroundB.setBackgroundColor(ContextCompat.getColor(AlgaePickupGroundB.getContext(), R.color.grey_button));
+                    AlgaePickupGroundB.setTag("D7D7D7D5");
+                    AlgaePickupGround = "false";
+                }
+
+            }
+
+        });
+        AlgaePickupReefB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) AlgaePickupReefB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    AlgaePickupReefB.setBackgroundColor(ContextCompat.getColor(AlgaePickupReefB.getContext(), R.color.colorPrimary));
+                    AlgaePickupReefB.setTag("#FFE600");
+                    AlgaePickupReef = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    AlgaePickupReefB.setBackgroundColor(ContextCompat.getColor(AlgaePickupReefB.getContext(), R.color.grey_button));
+                    AlgaePickupReefB.setTag("D7D7D7D5");
+                    AlgaePickupReef = "false";
+                }
+
+            }
+
+        });
+        AlgaePlaceNetB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) AlgaePlaceNetB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    AlgaePlaceNetB.setBackgroundColor(ContextCompat.getColor(AlgaePlaceNetB.getContext(), R.color.colorPrimary));
+                    AlgaePlaceNetB.setTag("#FFE600");
+                    AlgaePlaceNet = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    AlgaePlaceNetB.setBackgroundColor(ContextCompat.getColor(AlgaePlaceNetB.getContext(), R.color.grey_button));
+                    AlgaePlaceNetB.setTag("D7D7D7D5");
+                    AlgaePlaceNet = "false";
+                }
+
+            }
+
+        });
+        AlgaePlaceProcessorB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) AlgaePlaceProcessorB.getTag();
+                if (!"#FFE600".equals(colorCode)){
+                    AlgaePlaceProcessorB.setBackgroundColor(ContextCompat.getColor(AlgaePlaceProcessorB.getContext(), R.color.colorPrimary));
+                    AlgaePlaceProcessorB.setTag("#FFE600");
+                    AlgaePlaceProcessor = "true";
+
+
+                }
+                else if("#FFE600".equals(colorCode)){
+                    AlgaePlaceProcessorB.setBackgroundColor(ContextCompat.getColor(AlgaePlaceProcessorB.getContext(), R.color.grey_button));
+                    AlgaePlaceProcessorB.setTag("D7D7D7D5");
+                    AlgaePlaceProcessor = "false";
+                }
+
+            }
+
+        });
 
         To_EndGame_B.setOnClickListener(new View.OnClickListener()
         { //Makes onclick listener for button
@@ -79,27 +230,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     CoralReefL4 = "True";
                 }
                 //add in data collection pieces from radio buttons
-                if (CoralPickupGroundCB.isChecked()) {
-                    CoralPickupGround = "True";
-                }
-                if (CoralPickupStationCB.isChecked()) {
-                    CoralPickupStation = "True";
-                }
-                if (CoralPickupTroughCB.isChecked()) {
-                    CoralPickupTrough = "True";
-                }
-                if (AlgaePickupGroundCB.isChecked()) {
-                    AlgaePickupGround = "True";
-                }
-                if (AlgaePickupReefCB.isChecked()) {
-                    AlgaePickupReef = "True";
-                }
-                if (AlgaePlaceProcessorCB.isChecked()) {
-                    AlgaePlaceProcessor = "True";
-                }
-                if (AlgaePlaceNetCB.isChecked()) {
-                    AlgaePlaceNet = "True";
-                }
+
                 if (AlgaeKnockYesRB.isChecked()) {
                     AlgaeKnockYes = "True";
                 }
@@ -107,7 +238,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AlgaeKnockNo = "True";
                 }
 
-                Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
+                Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
                 startActivity(startintent);
             }
         });

@@ -51,91 +51,40 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.441" />
 
+
     <TextView
         android:id="@+id/teleopAlgaePlace_TV2"
-        android:layout_width="325dp"
-        android:layout_height="96dp"
+        android:layout_width="336dp"
+        android:layout_height="90dp"
         android:fontFamily="sans-serif"
         android:text="Where can you place Algae?"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="38sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/To_EndGame_B"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
-
-    <CheckBox
-        android:id="@+id/teleopAlgaeNet_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Net"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
-
-    <CheckBox
-        android:id="@+id/teleopAlgaeprocessor_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Processor"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.732"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
+        app:layout_constraintVertical_bias="0.614" />
 
     <TextView
         android:id="@+id/teleopAlgaePickup_TV2"
-        android:layout_width="336dp"
-        android:layout_height="90dp"
+        android:layout_width="330dp"
+        android:layout_height="89dp"
         android:fontFamily="sans-serif"
         android:text="Where can you pick up Algae?"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="38sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/To_EndGame_B"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
-
-    <CheckBox
-        android:id="@+id/teleopAlgaeReef_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:text="Reef"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
-
-    <CheckBox
-        android:id="@+id/teleopAlgaeGround_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:text="Ground"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
+        app:layout_constraintVertical_bias="0.614" />
 
     <TextView
         android:id="@+id/teleopAlgaePlace_TV"
@@ -154,6 +103,7 @@
         app:layout_constraintVertical_bias="0.794" />
 
     <RadioGroup
+        android:id="@+id/radioGroup2"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:orientation="horizontal"
@@ -162,7 +112,7 @@
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841">
+        app:layout_constraintVertical_bias="0.834">
 
         <RadioButton
             android:id="@+id/teleopKnockOffYes_RB"
@@ -179,7 +129,6 @@
             android:textSize="34sp" />
     </RadioGroup>
 
-
     <TextView
         android:id="@+id/teleopCoralAlgaeTitle_TV"
         android:layout_width="wrap_content"
@@ -194,62 +143,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.096" />
 
-    <CheckBox
-        android:id="@+id/teleopCoralStation_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="76dp"
-        android:text="Station"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.331" />
-
-    <CheckBox
-        android:id="@+id/teleopCoralTrough_CB"
-        android:layout_width="261dp"
-        android:layout_height="87dp"
-        android:text="Reef Trough"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389" />
-
-    <CheckBox
-        android:id="@+id/teleopCoralGround_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="76dp"
-        android:text="Ground"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
-
     <TextView
         android:id="@+id/teleopCoralHighestReach_TV"
-        android:layout_width="386dp"
-        android:layout_height="120dp"
+        android:layout_width="326dp"
+        android:layout_height="113dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif"
-        android:text="What is the highest level your robot reaches?"
+        android:text="Where can your robot score coral?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <TextView
         android:id="@+id/teleopCoralPickup_TV"
@@ -393,6 +303,105 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.304" />
+
+    <Button
+        android:id="@+id/algaeGround_B"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="Ground"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/algaeReef_B"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="Reef"
+        android:textAlignment="center"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/algaeProcessor_B"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="Processor"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/algaeNet_B"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="Net"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/coralGround_B"
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:text="Ground"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <Button
+        android:id="@+id/coralStation_B"
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:text="Station"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <Button
+        android:id="@+id/coralReef_B"
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:text="Reef"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
 
 
 </android.support.constraint.ConstraintLayout>

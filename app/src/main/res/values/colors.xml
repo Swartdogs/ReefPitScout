@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#FF6E00</color>
     <color name="colorAccent">#FF6E00</color>
     <color name="colorLabel">#3F51B5</color>
+    <color name="grey_button">#D7D7D7D5</color>
+
 
 
     <color name="colorBlue">#3F51B5</color>
