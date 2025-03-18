@@ -49,19 +49,12 @@ public class data_collection_end_game extends AppCompatActivity {
         To_Submission.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
             public void onClick(View v) {
-
-
                 if (EndSwerveRB.isChecked()){
                     EndSwerve = "True";
                 }
                 if (EndTankRB.isChecked()) {
                     EndTank = "True";
                 }
-
-
-
-
-
                 if (EndPlayerProcessorRB.isChecked()) {
                     EndPlayerProcessor = "True";
                 }
@@ -84,22 +77,22 @@ public class data_collection_end_game extends AppCompatActivity {
                     EndOther = "True";
                     if (EndOtherTextTXT.getText().toString().isEmpty()) {
                         Toast.makeText(data_collection_end_game.this, "Cannot Continue. Please Enter drive base type!", Toast.LENGTH_LONG).show();
-                    } else  {
+                    }
+                    else {
                         EndOtherText = (EndOtherTextTXT.getText().toString());
                         Intent startintent = new Intent(getApplicationContext(), Save_Page.class);
                         startActivity(startintent);
+                    }
                 }
-                //Ending position variables
-                //Because these are radio buttons, they may need to be changed to isChecked
-                //if (NoHangCB.isChecked()) {
-                //    NoHang = "True";
-                //}
-
-
+                else if (EndSwerve.equals("True") || EndTank.equals("True")){
+                    Intent startintent = new Intent(getApplicationContext(), Save_Page.class);
+                    startActivity(startintent);
+                }
+                else {
+                    Toast.makeText(data_collection_end_game.this, "Cannot Continue. Please Select Drive Base Type!", Toast.LENGTH_LONG).show();
+                }
             }
-        }
+        });
+    }
+}
 
-})
-
-
-    ;}}
