@@ -18,8 +18,6 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String CoralReefL4 = "False";
     public static String CoralPickupGround = "False";
     public static String CoralPickupStation = "False";
-    public static String CoralPickupTrough = "False";
-    public static String CoralPickupReef = "False";
     public static String AlgaePickupGround = "False";
     public static String AlgaePickupReef = "False";
     public static String AlgaePlaceProcessor = "False";
@@ -35,10 +33,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection_sandstorm);
 
         //Defines all checkboxes for reef
-        final CheckBox CoralReefL1CB = (CheckBox) findViewById(R.id.teleopCoralReachL4_CB);
-        final CheckBox CoralReefL2CB = (CheckBox) findViewById(R.id.teleopCoralReachL3_CB);
-        final CheckBox CoralReefL3CB = (CheckBox) findViewById(R.id.teleopCoralReachL2_CB);
-        final CheckBox CoralReefL4CB = (CheckBox) findViewById(R.id.teleopCoralReachL1_CB);
+        final CheckBox CoralReefL1CB = (CheckBox) findViewById(R.id.teleopCoralReachL1_CB);
+        final CheckBox CoralReefL2CB = (CheckBox) findViewById(R.id.teleopCoralReachL2_CB);
+        final CheckBox CoralReefL3CB = (CheckBox) findViewById(R.id.teleopCoralReachL3_CB);
+        final CheckBox CoralReefL4CB = (CheckBox) findViewById(R.id.teleopCoralReachL4_CB);
 
         //Defines all checkboxes for coral pickup
 
@@ -46,8 +44,6 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         CoralPickupGroundB.setTag("D7D7D7D5");
         final Button CoralPickupStationB = (Button) findViewById(R.id.coralStation_B);
         CoralPickupStationB.setTag("#D7D7D7D5");
-        final Button CoralPickupReefB = (Button) findViewById(R.id.coralReef_B);
-        CoralPickupReefB.setTag("D7D7D7D5");
         final Button AlgaePickupGroundB = (Button) findViewById(R.id.algaeGround_B);
         AlgaePickupGroundB.setTag("#D7D7D7D5");
         final Button AlgaePickupReefB = (Button) findViewById(R.id.algaeReef_B);
@@ -106,26 +102,6 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     CoralPickupStation = "false";
                 }
 
-
-            }
-
-        });
-        CoralPickupReefB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String colorCode = (String) CoralPickupReefB.getTag();
-                if (!"#FFE600".equals(colorCode)){
-                    CoralPickupReefB.setBackgroundColor(ContextCompat.getColor(CoralPickupReefB.getContext(), R.color.colorPrimary));
-                    CoralPickupReefB.setTag("#FFE600");
-                    CoralPickupReef = "true";
-
-
-                }
-                else if("#FFE600".equals(colorCode)){
-                    CoralPickupReefB.setBackgroundColor(ContextCompat.getColor(CoralPickupReefB.getContext(), R.color.grey_button));
-                    CoralPickupReefB.setTag("D7D7D7D5");
-                    CoralPickupReef = "false";
-                }
 
             }
 

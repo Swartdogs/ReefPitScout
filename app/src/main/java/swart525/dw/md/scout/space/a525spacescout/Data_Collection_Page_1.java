@@ -37,10 +37,10 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         //final EditText Initials_txt = (EditText) findViewById(R.id.Init_Txt);
         final EditText GenAutoCodesTXT = (EditText) findViewById(R.id.genAutoCodes_TXT);
         //Defines all Checkboxes
-        final CheckBox GenReefL1CB = (CheckBox) findViewById(R.id.genAutoPlaceL4_CB);
-        final CheckBox GenReefL2CB = (CheckBox) findViewById(R.id.genAutoPlaceL3_CB);
-        final CheckBox GenReefL3CB = (CheckBox) findViewById(R.id.genAutoPlaceL2_CB);
-        final CheckBox GenReefL4CB = (CheckBox) findViewById(R.id.genAutoPlaceL1_CB);
+        final CheckBox GenReefL1CB = (CheckBox) findViewById(R.id.genAutoPlaceL1_CB);
+        final CheckBox GenReefL2CB = (CheckBox) findViewById(R.id.genAutoPlaceL2_CB);
+        final CheckBox GenReefL3CB = (CheckBox) findViewById(R.id.genAutoPlaceL3_CB);
+        final CheckBox GenReefL4CB = (CheckBox) findViewById(R.id.genAutoPlaceL4_CB);
 
         final CheckBox GenAutoLeftCB = (CheckBox) findViewById(R.id.genPickupLeft_CB);
         final CheckBox GenAutoRightCB = (CheckBox) findViewById(R.id.genPickupRight_CB);
@@ -99,41 +99,11 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
                         Intent startintent = new Intent(getApplicationContext(), data_Collection_sandstorm.class);
                         startActivity(startintent);
-                    } else {
+                    }
+                    else {
                         Toast.makeText(Data_Collection_Page_1.this, "This error should not be reached. Uh Oh!", Toast.LENGTH_LONG).show();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                           }
+                    }
                 }
-
-
-
-
             }
         });
     }

@@ -36,7 +36,6 @@ public class Start_Page extends AppCompatActivity {
                         data_Collection_sandstorm.CoralReefL4 = "False";
                         data_Collection_sandstorm.CoralPickupGround = "False";
                         data_Collection_sandstorm.CoralPickupStation = "False";
-                        data_Collection_sandstorm.CoralPickupTrough = "False";
                         data_Collection_sandstorm.AlgaePickupGround = "False";
                         data_Collection_sandstorm.AlgaePickupReef = "False";
                         data_Collection_sandstorm.AlgaePlaceProcessor = "False";
