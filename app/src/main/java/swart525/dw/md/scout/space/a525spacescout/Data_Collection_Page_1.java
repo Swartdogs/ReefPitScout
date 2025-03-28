@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class Data_Collection_Page_1 extends AppCompatActivity {
 
-    //Defines Variables for Match/Team Number
+    //Defines variables for data collection
     public static int GenTeamNum = 0;
     public static int GenAutoCodes = 20;
     public static String GenReefL1 = "False";
@@ -29,24 +29,23 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data__collection__page_1);
 
-        //Sets up comparison numbers
+        //Sets up comparison number
         final int CompareTeamNum = 1; //Team must be greater than 1
 
-        //final EditText Match_Num_txt = (EditText) findViewById(R.id.Match_Num_Txt);
+        //Defines all EditText boxes
         final EditText GenTeamNumTXT = (EditText) findViewById(R.id.genTeamNum_TXT);
-        //final EditText Initials_txt = (EditText) findViewById(R.id.Init_Txt);
         final EditText GenAutoCodesTXT = (EditText) findViewById(R.id.genAutoCodes_TXT);
-        //Defines all Checkboxes
+
+        //Defines all CheckBoxes
         final CheckBox GenReefL1CB = (CheckBox) findViewById(R.id.genAutoPlaceL1_CB);
         final CheckBox GenReefL2CB = (CheckBox) findViewById(R.id.genAutoPlaceL2_CB);
         final CheckBox GenReefL3CB = (CheckBox) findViewById(R.id.genAutoPlaceL3_CB);
         final CheckBox GenReefL4CB = (CheckBox) findViewById(R.id.genAutoPlaceL4_CB);
-
         final CheckBox GenAutoLeftCB = (CheckBox) findViewById(R.id.genPickupLeft_CB);
         final CheckBox GenAutoRightCB = (CheckBox) findViewById(R.id.genPickupRight_CB);
         final CheckBox GenAutoGroundCB = (CheckBox) findViewById(R.id.genPickupGround_CB);
 
-        //Defines button needed and actions to cancel a data collection
+        //Defines Button to cancel data collection
         Button Cancel_Collection = (Button) findViewById(R.id.genCancel_B);
         Cancel_Collection.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
@@ -56,17 +55,15 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             }
         });
 
-        //Defines Start button and takes to next page as well as recording data
+        //Defines Button to next page
         Button gen_Next = (Button) findViewById(R.id.genNextPage_B);
+
+        //Makes onclick listener for next page button
         gen_Next.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
             public void onClick(View v) {
 
-
-                //Collect text input
-
-
-
+                //Sets variables to true if checked
                 if (GenReefL1CB.isChecked()) {
                     GenReefL1= "True";
                 }
@@ -88,10 +85,13 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenAutoGroundCB.isChecked()) {
                     GenAutoGround= "True";
                 }
+
+                //Collect text inputs and ensures they are filled
                 if (GenTeamNumTXT.getText().toString().isEmpty() || GenAutoCodesTXT.getText().toString().isEmpty()) {
                     Toast.makeText(Data_Collection_Page_1.this, "Cannot Continue. Please Enter Team Number Or Auto Codes!", Toast.LENGTH_LONG).show();
                 }
                 else{
+                    //Checks if team number inputted makes sense
                     int Team_Num_Real = Integer.parseInt(GenTeamNumTXT.getText().toString());
                     if (CompareTeamNum < Team_Num_Real) {
                         GenTeamNum = Integer.parseInt(GenTeamNumTXT.getText().toString()); //Sets team num data to txt box information

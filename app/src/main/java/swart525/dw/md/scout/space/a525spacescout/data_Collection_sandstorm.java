@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 
 public class data_Collection_sandstorm extends AppCompatActivity {
 
-    //Defines variables for use
+    //Defines variables for data collection
     public static String CoralReefL1 = "False";
     public static String CoralReefL2 = "False";
     public static String CoralReefL3 = "False";
@@ -32,14 +32,13 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data__collection_sandstorm);
 
-        //Defines all checkboxes for reef
+        //Defines all CheckBoxes for reef
         final CheckBox CoralReefL1CB = (CheckBox) findViewById(R.id.teleopCoralReachL1_CB);
         final CheckBox CoralReefL2CB = (CheckBox) findViewById(R.id.teleopCoralReachL2_CB);
         final CheckBox CoralReefL3CB = (CheckBox) findViewById(R.id.teleopCoralReachL3_CB);
         final CheckBox CoralReefL4CB = (CheckBox) findViewById(R.id.teleopCoralReachL4_CB);
 
-        //Defines all checkboxes for coral pickup
-
+        //Defines all Buttons for Coral pickup
         final Button CoralPickupGroundB = (Button) findViewById(R.id.coralGround_B);
         CoralPickupGroundB.setTag("D7D7D7D5");
         final Button CoralPickupStationB = (Button) findViewById(R.id.coralStation_B);
@@ -52,29 +51,25 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         AlgaePlaceProcessorB.setTag("#D7D7D7D5");
         final Button AlgaePlaceNetB = (Button) findViewById(R.id.algaeNet_B);
         AlgaePlaceNetB.setTag("D7D7D7D5");
-        //Defines all checkboxes for algae
 
 
-
-        //Defines all radio buttons for algae
+        //Defines all RadioButtons for Algae
         final RadioButton AlgaeKnockYesRB = (RadioButton) findViewById(R.id.teleopKnockOffYes_RB);
         final RadioButton AlgaeKnockNoRB = (RadioButton) findViewById(R.id.teleopKnockOffNo_RB);
 
 
 
-
-        //Defines and implements Button to continue along with variable savings
-        final Button To_EndGame_B = (Button) findViewById(R.id.To_EndGame_B);
+        //Changes color of buttons and sets variable to true if clicked
+        //Resets to default if clicked again
         CoralPickupGroundB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 String colorCode = (String) CoralPickupGroundB.getTag();
                 if (!"#FFE600".equals(colorCode)){
                     CoralPickupGroundB.setBackgroundColor(ContextCompat.getColor(CoralPickupGroundB.getContext(), R.color.colorPrimary));
                     CoralPickupGroundB.setTag("#FFE600");
                     CoralPickupGround = "true";
-
-
                 }
                 else if("#FFE600".equals(colorCode)){
                     CoralPickupGroundB.setBackgroundColor(ContextCompat.getColor(CoralPickupGroundB.getContext(), R.color.grey_button));
@@ -187,12 +182,16 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
         });
 
+        //Defines Button to next page
+        final Button To_EndGame_B = (Button) findViewById(R.id.To_EndGame_B);
+
+        //Creates OnClick Listener for next page button
         To_EndGame_B.setOnClickListener(new View.OnClickListener()
-        { //Makes onclick listener for button
+        {
             @Override
             public void onClick(View v) {
 
-                /*add in data collection pieces from checkboxes*/
+                //Sets variables to true if checked
                 if (CoralReefL1CB.isChecked()) {
                     CoralReefL1 = "True";
                 }
@@ -205,7 +204,6 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 if (CoralReefL4CB.isChecked()) {
                     CoralReefL4 = "True";
                 }
-                //add in data collection pieces from radio buttons
 
                 if (AlgaeKnockYesRB.isChecked()) {
                     AlgaeKnockYes = "True";

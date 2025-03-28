@@ -45,7 +45,6 @@ public class Actual_Submit extends AppCompatActivity {
          data_Collection_sandstorm.CoralReefL4 + "," +
          data_Collection_sandstorm.CoralPickupGround + "," +
          data_Collection_sandstorm.CoralPickupStation + "," +
-
          data_Collection_sandstorm.AlgaePickupGround + "," +
          data_Collection_sandstorm.AlgaePickupReef + "," +
          data_Collection_sandstorm.AlgaePlaceProcessor + "," +

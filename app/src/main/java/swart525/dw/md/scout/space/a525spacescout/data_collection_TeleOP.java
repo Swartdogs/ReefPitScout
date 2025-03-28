@@ -11,7 +11,6 @@ import android.widget.RadioButton;
 public class data_collection_TeleOP extends AppCompatActivity {
 
     //Defines variables for data collection
-    //EX: public static String TeleTopCubes = "False";
     public static String shallow = "False";
     public static String deep = "False";
     public static String YesFit = "False";
@@ -25,21 +24,19 @@ public class data_collection_TeleOP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_collection__tele_op);
 
-        //Defines all checkboxes;
-        //EX: final CheckBox TeleTopCubesCB = (CheckBox) findViewById(R.id.Tele_TopCubes_CB);
+        //Defines all Buttons;
         final Button shallowB = (Button) findViewById(R.id.endHangShallow_B);
         shallowB.setTag("D7D7D7D5");
+
         final Button deepB = (Button) findViewById(R.id.endHangDeep_B);
         deepB.setTag("D7D7D7D5");
 
-        //Defines all buttons
-        //EX: final Button AutopitCommunityLocation1B = (Button) findViewById(R.id.Autopit_CommunityLocation1_B);
-
+        //Defines all RadioButtons
         final RadioButton YesFitRB = (RadioButton) findViewById(R.id.fitYes_RB);
         final RadioButton NoFitRB = (RadioButton) findViewById(R.id.fitNo_RB);
-        //Defines all text boxes
-        //EX: final EditText CargoStrategytxt = (EditText) findViewById(R.id.Cargo_Strategy_txt);
 
+        //Changes color of buttons and sets variable to true if clicked
+        //Resets to default if clicked again
         shallowB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +56,6 @@ public class data_collection_TeleOP extends AppCompatActivity {
             }
 
         });
-
         deepB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,11 +78,11 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
         });
 
-
-        //Below defines the button and commands for saving data and switching pages
         final Button To_EndGame = (Button) findViewById(R.id.To_Engame_B);
+
+        //Creates OnClick Listener for next page button
         To_EndGame.setOnClickListener(new View.OnClickListener()
-        { //Makes onclick listener for button
+        {
             @Override
            public void onClick(View v) {
 
