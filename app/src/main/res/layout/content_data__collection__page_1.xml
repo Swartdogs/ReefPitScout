@@ -43,17 +43,17 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif"
         android:foregroundGravity="center_horizontal"
-        android:text="Where can you place coral in Auto?"
+        android:text="Can you hang in Auto?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="41sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <ImageView
         android:id="@+id/genReefImage_IV"
@@ -61,63 +61,37 @@
         android:layout_height="421dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488"
+        app:layout_constraintVertical_bias="0.76"
         app:srcCompat="@drawable/reef_removebg_preview__1_" />
-
-    <CheckBox
-        android:id="@+id/genAutoPlaceL2_CB"
-        android:layout_width="119dp"
-        android:layout_height="66dp"
-        android:text="L2"
-        android:textSize="44sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
 
     <CheckBox
         android:id="@+id/genAutoPlaceL4_CB"
         android:layout_width="119dp"
         android:layout_height="71dp"
-        android:text="L4"
+        android:text="No hang"
         android:textSize="44sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377" />
+        app:layout_constraintVertical_bias="0.744" />
 
     <CheckBox
         android:id="@+id/genAutoPlaceL1_CB"
         android:layout_width="119dp"
         android:layout_height="66dp"
-        android:text="L1"
+        android:text="Yes"
         android:textSize="44sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
-
-    <CheckBox
-        android:id="@+id/genAutoPlaceL3_CB"
-        android:layout_width="119dp"
-        android:layout_height="66dp"
-        android:text="L3"
-        android:textSize="44sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintVertical_bias="0.636" />
 
     <TextView
         android:id="@+id/genAutoPickup_TV"
@@ -126,43 +100,43 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif"
         android:foregroundGravity="center_horizontal"
-        android:text="Can you pick up coral in Auto? If so, where?"
+        android:text="Can you pick up fuel in Auto? If so, where?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.313" />
 
     <CheckBox
         android:id="@+id/genPickupRight_CB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Right Station"
+        android:text="Neutral Zone"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <CheckBox
         android:id="@+id/genPickupLeft_CB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Left Station"
+        android:text="Depot"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <Button
         android:id="@+id/genNextPage_B"
@@ -288,14 +262,14 @@
         android:id="@+id/genPickupGround_CB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ground"
+        android:text="Outpost"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.408" />
 
 
 </android.support.constraint.ConstraintLayout>

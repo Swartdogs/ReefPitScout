@@ -26,19 +26,6 @@
         app:layout_constraintVertical_bias="0.373" />
 
     <CheckBox
-        android:id="@+id/teleopCoralReachL4_CB"
-        android:layout_width="119dp"
-        android:layout_height="71dp"
-        android:text="L4"
-        android:textSize="44sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.233" />
-
-    <CheckBox
         android:id="@+id/teleopCoralReachL1_CB"
         android:layout_width="119dp"
         android:layout_height="66dp"
@@ -179,18 +166,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.169" />
-
-    <ImageView
-        android:id="@+id/teleopCoralAlgaeReef_IV"
-        android:layout_width="146dp"
-        android:layout_height="312dp"
-        android:src="@drawable/reef_removebg_preview__1___1_"
-        app:layout_constraintBottom_toBottomOf="@+id/To_EndGame_B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
 
     <View
         android:id="@+id/divider"
