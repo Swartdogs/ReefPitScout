@@ -36,7 +36,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         final CheckBox CoralReefL1CB = (CheckBox) findViewById(R.id.teleopCoralReachL1_CB);
         final CheckBox CoralReefL2CB = (CheckBox) findViewById(R.id.teleopCoralReachL2_CB);
         final CheckBox CoralReefL3CB = (CheckBox) findViewById(R.id.teleopCoralReachL3_CB);
-        final CheckBox CoralReefL4CB = (CheckBox) findViewById(R.id.teleopCoralReachL4_CB);
+
 
         //Defines all Buttons for Coral pickup
         final Button CoralPickupGroundB = (Button) findViewById(R.id.coralGround_B);
@@ -54,8 +54,8 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
 
         //Defines all RadioButtons for Algae
-        final RadioButton AlgaeKnockYesRB = (RadioButton) findViewById(R.id.teleopKnockOffYes_RB);
-        final RadioButton AlgaeKnockNoRB = (RadioButton) findViewById(R.id.teleopKnockOffNo_RB);
+        final RadioButton AlgaeKnockYesRB = (RadioButton) findViewById(R.id.autoHangYes_RB);
+        final RadioButton AlgaeKnockNoRB = (RadioButton) findViewById(R.id.autoHangNo_RB);
 
 
 
@@ -201,9 +201,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 if (CoralReefL3CB.isChecked()) {
                     CoralReefL3 = "True";
                 }
-                if (CoralReefL4CB.isChecked()) {
-                    CoralReefL4 = "True";
-                }
+
 
                 if (AlgaeKnockYesRB.isChecked()) {
                     AlgaeKnockYes = "True";
